@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # type: ignore
 from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error, r2_score
 import requests
 import joblib
