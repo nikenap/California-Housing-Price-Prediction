@@ -143,14 +143,14 @@ def mean_absolute_percentage_error(y_true, y_pred):
     return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
 
 mape = mean_absolute_percentage_error(y_test, y_pred)
-rmse = mean_squared_error(y_test, y_pred, squared=False)
+#rmse = mean_squared_error(y_test, y_pred, squared=False)
 r2 = r2_score(y_test, y_pred)
 
 # Display Model Performance Metrics
 st.write("## Model Performance Metrics")
 st.write("---")
 st.write(f"**MAPE (Mean Absolute Percentage Error):** {mape:.2f}%")
-st.write(f"**RMSE (Root Mean Squared Error):** ${rmse:,.2f}")
+#st.write(f"**RMSE (Root Mean Squared Error):** ${rmse:,.2f}")
 st.write(f"**R² (Coefficient of Determination):** {r2:.2f}")
 
 # Toggle for Visualizations
