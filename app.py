@@ -7,7 +7,7 @@ import requests
 import joblib
 
 # Load dataset and trained model
-url = "https://github.com/nikenap/California-Housing-Price-Prediction/releases/tag/v1.0.0/california_house_model.pkl"
+url = "https://github.com/nikenap/California-Housing-Price-Prediction/releases/download/v1.0.0/california_house_model.pkl"
 response = requests.get(url)
 with open("california_house_model.pkl", "wb") as f:
     f.write(response.content)
