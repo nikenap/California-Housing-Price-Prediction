@@ -3,11 +3,17 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error, r2_score
-import pickle
+import requests
+import joblib
 
 # Load dataset and trained model
+url = "https://github.com/nikenap/California-Housing-Price-Prediction/releases/tag/v1.0.0/california_house_model.pkl"
+response = requests.get(url)
+with open("california_house_model.pkl", "wb") as f:
+    f.write(response.content)
+
 df_raw = pd.read_csv("data_california_house_cleaned.csv")
-model = pickle.load(open('california_house_model.pkl', 'rb'))
+model = joblib.load('california_house_model.pkl')
 
 # Set the title for the web app
 st.write('''
