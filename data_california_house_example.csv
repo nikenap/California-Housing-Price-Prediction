@@ -1,2 +1,5 @@
 housing_median_age,total_rooms,median_income,ocean_proximity,county,pop_per_household
 52.0,112.0,1.975,INLAND,Fresno,4.825
+43.0,1017.0,2.2604,NEAR BAY,Alameda,3.0180505415162500
+17.0,2358.0,6.299,<1H OCEAN,Los Angeles,3.8104395604395600
+17.0,2518.0,1.7199,<1H OCEAN,Los Angeles,3.051
