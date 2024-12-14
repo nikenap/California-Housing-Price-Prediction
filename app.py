@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error, r2_score
 import pickle
 
-# Load dataset and trained pipeline
+# Load dataset and trained model
 df_raw = pd.read_csv("data_california_house_cleaned.csv")
-pipeline = pickle.load(open('california_house_model.pkl', 'rb'))
+model = pickle.load(open('california_house_model.pkl', 'rb'))
 
 # Set the title for the web app
 st.write('''
@@ -98,8 +98,8 @@ st.write("User Input (Single Prediction)" if uploaded_file is None else "Uploade
 st.write(input_df)
 st.write('---')
 
-# Apply pipeline to make predictions
-prediction = pipeline.predict(input_df)
+# Apply model to make predictions
+prediction = model.predict(input_df)
 
 # Display predictions
 st.subheader('Predicted House Prices')
@@ -129,7 +129,7 @@ X_test = test_data.drop(columns=['median_house_value'])
 y_test = test_data['median_house_value']
 
 # Make predictions
-y_pred = pipeline.predict(X_test)
+y_pred = model.predict(X_test)
 
 # Calculate performance metrics
 def mean_absolute_percentage_error(y_true, y_pred):
