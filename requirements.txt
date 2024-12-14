@@ -1,8 +1,27 @@
 
-streamlit==1.41.0
-matplotlib==3.9.2
+# General
 pandas
 numpy
+geopandas
+shapely
+
+# Visualization
+matplotlib
+seaborn
+plotly
+IPython
+folium
+
+# Feature Engineering
 scikit-learn
+category_encoders
+statsmodels
+
+# Split Data and Hyperparameter Tuning
+xgboost
+
+# Model Evaluation
+shap
+
+# Save Model
 joblib
-requests
