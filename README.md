@@ -16,7 +16,7 @@ There are several files in this repository:
 1. **Jupyter Notebook**:
    * *california_housing_price_prediction.ipynb*: Contains the code for data preprocessing, exploratory data analysis, feature engineering, and model building.
 2. **Python**
-   * *prediction_app.py*: Implements a Streamlit app for deploying and visualizing the prediction model.
+   * *app.py*: Implements a Streamlit app for deploying and visualizing the prediction model.
 2. **CSV Files**:
    * *data_california_house.csv*: The original dataset as received, containing raw data.
    * *data_california_house_cleaned.csv*: The processed dataset after data cleaning and preparation for analysis.
